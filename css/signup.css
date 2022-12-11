@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+     background: url('../img/a03227ee6857ccfa31d942ec14502b2c.jpg') no-repeat center center/cover;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #container {
+    margin: 5% auto;
+    max-width: 400px;
+    padding: 20px;
+
+  }
+  #h3{
+    display: none;
+  }
+
+
+  .form-wrap2 {
+    height: 600px;
+    background: rgb(30, 15, 15);
+    padding: 15px 25px;
+    color: black;
+    border: 2.5px #fff solid;
+    border-radius: 35px;
+    margin: auto;
+  }
+  .form-wrap2 h1,
+  .form-wrap2 p {
+    text-align: center;
+    color: #fff;
+  }
+  .form-wrap2 i {
+    color: #fff;
+  }
+  .form-wrap2 .form-group {
+    margin-top: 10px;
+    outline: none;
+  }
+   label {
+    color:#fff;
+  }
+  .form-wrap2 .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: black 1px solid;
+    border-radius: 12px;
+  }
+  
+
+  .form-wrap2 button {
+    width: 100%;
+    display: block;
+    background-color:rgba(113, 98, 98, 0.2);
+    padding: 10px;
+    margin-top: 10px;
+    color:#fff;
+    cursor: pointer;
+    border: 3px #fff solid;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: larger;
+  }
+
+  .form-wrap2 button:hover {
+    background-color:rgb(219, 217, 217);
+    color: #333;
+  }
+
+  .form-wrap2 .bottom-text {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .form-wrap2 .bottom-text a{
+      color: #fff;
+  }
+  .form-wrap2 .bottom-text a:hover{
+    color:rgb(219, 217, 217);
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem 0 0.5rem 0;
+
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+
+}
+.socials a i{
+    width: 20px;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+
+  
+
+  .bot{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .bot p{
+    color: #fff;
+  }
+
+  .bot a {
+    color:grey;
+  }
+  .bot a:hover{
+   color: rgb(219, 217, 217);
+  }

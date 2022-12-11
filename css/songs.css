@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.container{
+   background-color: #333;
+   color: #fff;
+    margin: auto;
+    padding: 0.7rem;
+    overflow: hidden;
+}
+.cont{    border-top:white 3px double;
+}
+.singer{
+    border: #fff 3px solid;
+}
+.ss{
+    width: 33%;
+  padding: 1em;
+  margin: 1em;
+}
+.name{
+    font-size: x-large;
+    width: 1310px;
+    height: 70px;
+    margin: 20px;
+    margin-left: 30px;
+    border-bottom: 3px #fff solid;
+}
+.name h1{
+    padding-left: 20px;
+}
+.cont{
+    display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.lyrics{
+    font-size: larger;
+    font-weight: bolder;
+    width: 90%;
+    height: 30vh;
+    overflow: auto;
+    border: 3px solid grey;
+}
+.lyrics p{
+    padding-left: 20px;
+}
+.audio{
+    width: 80%;
+    height: auto;
+    padding: 15px;
+    color: #444;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 22px;
+    background-color: rgb(163, 163, 163);
+    
+}
+audio {
+  width:100%;
+}
+audio::-webkit-media-controls-panel{
+    background-color:rgb(80, 78, 78) !important;
+    }
+    
+

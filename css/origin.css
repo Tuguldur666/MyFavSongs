@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+img{
+  width: 100%;
+  height: 80vh;
+}
+section{
+    background-color: #333;
+    color: #fff;
+}
+.desc{
+    border-bottom: 4px #fff solid;
+    padding-bottom: 15px;
+}
+.head{
+    font-weight: bold;
+    margin-left: 20px;
+    display: inline;
+}
+
+.para ul{
+ display: inline-block;
+ list-style: none;
+ margin-left: 20px;
+ padding-top: 15px;
+}
+.para li{
+    padding-bottom: 10px;
+    display: inline;
+    font-weight: bold;
+    margin-right:10px ;
+}
+p{
+    font-size: larger;
+    padding: 20px;
+    padding-top: 5px;
+}
+.toSongs{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.toSongs a{
+    color: #fff;
+    transition:color 2s ease-out;
+}
+.toSongs a:hover{
+    color: rgb(176, 4, 4);
+}
+.toSongs h1{
+    transition:2s ease ;
+}
+.toSongs h1:hover{
+    font-size: xx-large;
+}

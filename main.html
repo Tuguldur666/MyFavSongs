@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/609039e62e.js" crossorigin="anonymous"></script>
+    <link href="fontawesome-free-6.2.1-web/css/all.css" rel="stylesheet">
+    <title> MyFavSongs</title>
+    <link rel="icon" type="image/x-icon" href="img/1238155.png">
+   
+</head>
+<body onload="changeImg()">
+    <nav class="navbar">
+    <h2 class="heading">MyFavSongs <span><i class="fa-solid fa-music"></i></span> </h2>
+        <div class="social">
+            <a href="https://www.facebook.com/youre.here.on.purpose" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/trash_gang_community/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.youtube.com/channel/UCkQ62tvPlVVb2WLppjRfPdQ?view_as=subscriber" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>   
+        </div>
+    <ul>
+        <li><a href="main.html">Home</a></li>
+        <li>Artists & Bands <i class="fas fa-angle-down"></i>
+            <ul>
+                <li><a href="sod.html"> <span>System of a down</span> </a></li>
+                <li><a href="nirva.html"><span>Nirvana</span></a></li>
+                <li><a href="meta.html"><span>Metallica</span></a></li>
+                <li><a href="etf.html"><span>Escape the fate</span></a></li>
+                <li><a href="eva.html"><span>Evanescene</span></a></li>
+                <li><a href="linkin.html"><span>Linkin Park</span></a></li>
+                <li><a href="ghost.html"><span>Ghostemane</span></a></li>
+            </ul> 
+        </li>  
+        <li><a href="ghost.html">Songs</a></li> 
+        <li><a href="about.html">About</a></li>
+    </ul>
+    </nav>
+   
+    <section id=showcase>
+      <div class="image" id="slide"></div>
+      <div class="showcase-content">
+            <h1 class="heading">MyFavSongs</h1>
+            <p class="lead">The purpose of this website is for you <br> to listen to my favourite rock bands and their top 3 songs for me..
+                </p>
+            <a class="btn" href="about.html">Read more</a>
+      </div>
+    </section>
+    <section id="feature">
+      <div class="features">
+        <div class="box box1">
+            <i class="fa-sharp fa-solid fa-microphone fa-2xl"></i>
+            <h3 class="heading"><a href="sod.html">Artists and Origins</a></h3>
+            <p>My favourite bands and artists and their origin stories. <br> 
+            You will know their early life and  career
+        </p>
+        </div>
+        <div class="box box2" >
+            <i class="fa-solid fa-headphones fa-2xl"></i>
+            <h3 class="heading"><a href="songs.html">Lyrics and Songs</a></h3>
+            <p>My favourite band's songs and lyrics. <br> I bet you will enjoy it</p>
+        </div>
+    </div>
+        </section>
+    <div class="clr"></div>
+    <footer >
+        <div class="footer-content">
+          
+            <h3 class="heading">MyFavSongs</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sed quasi, tenetur rerum doloremque saepe libero, ea laboriosam soluta totam eligendi nostrum modi ipsam hic provident doloribus, dignissimos eum. Quibusdam.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram "></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p id="copy">Copyright &copy;2022 MyFavSongs  </p>
+            <p id="p1"></p>
+        </div>
+
+    </footer>
+</body>
+<script>
+	var today = new Date();
+
+    var date = today.getFullYear()+' : '+(today.getMonth()+1)+' : '+today.getDate()
+	document.getElementById("p1").innerHTML = "Date : "+date;
+</script>
+
+</html>
