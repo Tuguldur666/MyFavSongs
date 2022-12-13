@@ -372,7 +372,7 @@ footer{
         display: none;
        }
        .heading{
-          margin-bottom: 10px;
+          -bottom: 10px;
        }
        .navbar{
         flex-direction: column;
@@ -391,7 +391,7 @@ footer{
             .navbar ul li{
                 color: #fff;
                 padding:0.5rem;
-                /* position: relative; */
+                position: relative;
             }
             .navbar ul {
                 display: block;
