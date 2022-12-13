@@ -372,7 +372,7 @@ footer{
         display: none;
        }
        .heading{
-        padding-bottom: 15px;
+          margin-bottom: 10px;
        }
        .navbar{
         flex-direction: column;
