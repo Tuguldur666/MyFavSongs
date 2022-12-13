@@ -26,7 +26,7 @@ body{
 }
 .name{
     font-size: x-large;
-    width: 1310px;
+    width: 100%px;
     height: 70px;
     margin: 20px;
     margin-left: 30px;
@@ -69,4 +69,13 @@ audio::-webkit-media-controls-panel{
     background-color:rgb(80, 78, 78) !important;
     }
     
+    @media only screen and (max-width: 415px){
+        .name{
+            font-size:larger;
+        }
+        .ss{
+            width: 20%;
+            font-size:11px;
+        }
+    }
 
