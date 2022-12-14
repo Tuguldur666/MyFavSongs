@@ -101,7 +101,6 @@ a{
     border-radius: 20px;
  }
 .navbar ul li:hover ul li:hover a{
-           
             color:rgb(0, 0, 0);
             font-weight: bold;
             border-radius:20px; 
@@ -367,7 +366,7 @@ footer{
 
 
 
-  @media only screen and (max-width: 415px){
+  @media only screen and (max-width: 450px){
     .navbar ul li ul {
         display:none;}
     .navbar ul li:hover ul {
@@ -381,6 +380,18 @@ footer{
             padding: 1rem;
             margin-top: 5px;
         }
+        .navbar ul li:hover ul li a {
+            color: #333;}
+            .navbar ul li:hover ul li:hover{
+               background:#333;
+               
+            }
+           .navbar ul li:hover ul li:hover a{
+                      background: #fff;
+                       color:#333;
+           }
+         
+          
     .social{
         display: none;
        }
