@@ -183,7 +183,7 @@ a{
     font-size: large;
 }
 .box{
-  width: 550px;
+  width: 600px;
   height:250px;
   padding: 1em;
   margin: 1em;
@@ -199,7 +199,7 @@ a{
     margin-right: 90px;
 }
 .box:hover{
-    width: 600px;
+    width: 620px;
     height:270px ;
     font-size: x-large;
     max-height: 300px;
