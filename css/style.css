@@ -199,7 +199,7 @@ a{
     margin-right: 90px;
 }
 .box:hover{
-    width: 620px;
+    width: 650px;
     height:270px ;
     font-size: x-large;
     max-height: 300px;
@@ -304,27 +304,7 @@ footer{
     opacity: .4;
     font-weight: 200;
 }
-@media only screen and (max-width: 1400px){
-    .box{
-        width:600px;
-        height:270px;
-        padding: 1.5em;
-        margin: 1em;
-        background-color: #333;
-        transition: all 0.5s ease-in;
-      }
-      .box1{
-        margin-left: 20px;
-      }
-      .box2{
-        margin-right:20px;
-      }
-      .box:hover{
-        width: 650px;
-      }
-  }
-
-  @media only screen and (max-width:1300px) and (min-width:1101px){
+  @media only screen and (max-width: 1200px){
     .clear{
         display: none;
     };
@@ -339,7 +319,7 @@ footer{
        display: none;
     }
     .box{
-        width:480px;
+        width: 550px;
         height:270px;
         padding: 1.5em;
         margin: 1em;
@@ -351,43 +331,6 @@ footer{
       }
       .box2{
         margin-right:20px;
-      }
-    .box:hover{
-        width: 500px;
-        font-size: x-large;
-    
-    }
-}
-  @media only screen and (max-width: 1100px){
-    .clear{
-        display: none;
-    };
-    .heading{
-        margin: 0;
-        text-shadow: rgb(118, 114, 114) 4px 4px 4px;
-        color: #fff;
-        padding-top: 10px;
-        
-    }
-    .social{
-       display: none;
-    }
-    .box{
-        width: 470px;
-        height:270px;
-        padding: 1.5em;
-        margin: 1em;
-        background-color: #333;
-        transition: all 0.5s ease-in;
-      }
-      .box1{
-        margin-left: 20px;
-      }
-      .box2{
-        margin-right:20px;
-      }
-      .box:hover{
-        width: 500px;
       }
   }
 
@@ -406,7 +349,7 @@ footer{
        display: none;
     }
     .box{
-        width:350px;
+        width:340px;
         height:270px;
         padding: 1.5em;
         margin: 1em;
@@ -419,12 +362,6 @@ footer{
       .box2{
         margin-right:20px;
       }
-    .box:hover{
-        width: 375px;
-   
-        font-size: large;
-    
-    }
   }
 
 
@@ -517,14 +454,15 @@ footer{
                 font-size: large;
                 max-height: 300px;
                 
-            }
+            } 
+            
             
   }
-  .fb-like{
-    float: left;
-    margin-top: 20px;
-    display: block;
 
+  .fb-like{
+        float: left;
+        margin-right:200px;
+        width: 140px;
   }
 
 
