@@ -7,14 +7,13 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
-
 }
 a{
     text-decoration:none ;
 }
 .heading{
     margin-left: 2.5rem;
-    text-shadow: rgb(118, 114, 114) 4px 4px 4px;
+    text-shadow: rgb(99, 91, 91) 4px 4px 4px;
     color: #fff;
     padding-top: 15px;
     
@@ -23,11 +22,12 @@ a{
 span{
     width: 50px;
     height: 40px;
-    color: rgb(182, 181, 181);
+    color: rgb(144, 139, 139);
     margin-left: 10px;
     background: none;
 }
 .navbar{
+font-weight: bold;
 display: flex;
 position: sticky;
 top: 0;
@@ -89,22 +89,20 @@ a{
 .navbar ul li:hover ul li {
     display: block;
     background:#333;
-    color:#fff;
-   
-    
   }
-
-.navbar ul li:hover ul li a {
- color: #333;  }
  .navbar ul li:hover ul li:hover{
     background:#fff;
     border-radius: 20px;
  }
 .navbar ul li:hover ul li:hover a{
-            color:rgb(0, 0, 0);
             font-weight: bold;
             border-radius:20px; 
+            color: #000;
 }
+.navbar ul li:hover ul li:hover .sp{
+            color: rgb(52, 47, 47);
+}
+
 .heading{
     font-size: xx-large;
 }
