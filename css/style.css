@@ -319,7 +319,7 @@ footer{
        display: none;
     }
     .box{
-        width: 550px;
+        width: 540px;
         height:270px;
         padding: 1.5em;
         margin: 1em;
@@ -332,9 +332,12 @@ footer{
       .box2{
         margin-right:20px;
       }
+      .box:hover{
+        width: 560px;
+      }
   }
 
-  @media only screen and (max-width: 912px){
+  @media only screen and (max-width: 912px) {
     .clear{
         display: none;
     };
@@ -349,7 +352,7 @@ footer{
        display: none;
     }
     .box{
-        width:340px;
+        width:330px;
         height:270px;
         padding: 1.5em;
         margin: 1em;
@@ -361,6 +364,10 @@ footer{
       }
       .box2{
         margin-right:20px;
+      }
+      .box:hover{
+        width: 340px;
+        font-size: larger;
       }
   }
 
@@ -461,8 +468,8 @@ footer{
 
   .fb-like{
         float: left;
-        margin-right:200px;
         width: 140px;
+        margin-top: 15px;
   }
 
 
