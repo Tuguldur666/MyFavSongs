@@ -61,6 +61,7 @@ width: 100%;
 }
 .navbar .social i:hover{
     color:#44bae8;
+    transition: 0.3s ease-in;
 }
 a{
     color: #fff;
@@ -71,6 +72,8 @@ a{
     background:#fff;
     color: #333;
     border-radius: 20px;
+    transition: 0.3s ease-in-out
+    ;
 }
 .navbar ul li i{
     color: #fff;
@@ -83,8 +86,6 @@ a{
         left: 0;
         width: 210px;
         margin-top: 1rem;
-       
-      
     }
 .navbar ul li:hover ul li {
     display: block;
@@ -94,13 +95,9 @@ a{
     background:#fff;
     border-radius: 20px;
  }
-.navbar ul li:hover ul li:hover a{
-            font-weight: bold;
-            border-radius:20px; 
-            color: #000;
-}
-.navbar ul li:hover ul li:hover .sp{
+.navbar ul li:hover ul li:hover span{
             color: rgb(52, 47, 47);
+            transition: 0.6s ease-out;
 }
 
 .heading{
@@ -169,6 +166,7 @@ a{
     color: #fff;
     border-radius: 12px;
     border: 2px #fff solid;
+    transition: 0.5s ease;
 }
 .features{
     width: 100%;
@@ -201,6 +199,7 @@ a{
     height:270px ;
     font-size: x-large;
     max-height: 300px;
+    transition: 0.7s ease-out;
     
 }
 .box h3{

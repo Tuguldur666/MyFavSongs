@@ -17,19 +17,14 @@
           <form>
             <div class="form-group">
               <label for="email">E-mail  <i class="fas fa-envelope"></i></label>
-              <input type="text" name="email" id="email" placeholder=" mandakh@gmail.edu.mn" value=""/>
+              <input  class="inp" type="text" name="email" id="email" placeholder=" mandakh@gmail.edu.mn" value=""/>
             </div>
             <div class="form-group">
               <label for="password">Password <i class="fas fa-unlock-alt"></i></label>
-              <input  type="password" name="password" id="password" placeholder="12345678"  value=""/>
+              <input class="inp" type="password" name="password" id="password" placeholder="12345678"  value=""/>
       
         <input style=" width: 5%;transform : scale(1.5);margin-left: 10px;margin-top:10px;"type="checkbox" id="scales" name="scales" checked>
         <label style="margin-left: 5px" for="scales">Remember me</label>
-   
-              
-             
-             
-              
               <p class="bottom-text">
                 <a href="#"> Forget password ?</a>
               </p>
@@ -54,6 +49,22 @@
 </body>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="DjMEP7LY"></script>
 <script src="./js/login.js"></script>
+<script>
+  let input = document.getElementById("email")
+  let pass = document.getElementById('password')
+  input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+  
+    document.getElementById("submit").click();
+  }
+});
+  pass.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+  
+    document.getElementById("submit").click();
+  }
+});
+  </script>
 
 
 </html>

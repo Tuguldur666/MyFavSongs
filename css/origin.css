@@ -5,6 +5,8 @@
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: none;
+   width: 100%;
 
 }
 img{
@@ -59,3 +61,24 @@ p{
 .toSongs h1:hover{
     font-size: xx-large;
 }
+.para{
+    position: relative;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: 1.2s all ease;
+  }
+  .para.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+.long{
+    position: relative;
+    transform: translateX(200px);
+    opacity: 0.2;
+    transition: 1s all ease-in-out;
+  }
+  .long.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
