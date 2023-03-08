@@ -175,10 +175,18 @@
         setTimeout("changeImg()", time);
     }
     window.onload=changeImg
-    var today = new Date();
-
-    var date = today.getFullYear()+' : '+(today.getMonth()+1)+' : '+today.getDate()
-	document.getElementById("p1").innerHTML = "Date : "+date;
+    function updateTime() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = now.getMonth() + 1;
+  const day = now.getDate();
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+  const clock = document.getElementById('p1');
+  clock.textContent = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')} ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+}
+setInterval(updateTime, 1000); // Update clock every second
       </script>
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="DjMEP7LY"></script>
       <script src="js/app.js"></script>
