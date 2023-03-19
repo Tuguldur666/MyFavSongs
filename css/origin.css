@@ -92,4 +92,49 @@ p{
     transform: translateY(0);
     opacity: 1;
   }
-
+  .slider {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slides {
+    flex: 1 0 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .active {
+    transform: translateX(0);
+  }
+  
+  .prev {
+    transform: translateX(-100%);
+  }
+  
+  .next {
+    transform: translateX(100%);
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+  

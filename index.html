@@ -21,9 +21,9 @@
             </div>
             <div class="form-group">
               <label for="password">Password <i class="fas fa-unlock-alt"></i></label>
-              <input class="inp" type="password" name="password" id="password" placeholder="12345678"  value=""/>
+              <input class="inp"  type="password" name="password" id="password" placeholder="12345678"  value=""/>
       
-        <input style=" width: 5%;transform : scale(1.5);margin-left: 10px;margin-top:10px;"type="checkbox" id="scales" name="scales" checked>
+        <input style=" width: 5%;transform : scale(1.5);margin-left: 10px;margin-top:10px;"type="checkbox" id="remember" id="scales" name="scales" checked>
         <label style="margin-left: 5px" for="scales">Remember me</label>
               <p class="bottom-text">
                 <a href="#"> Forget password ?</a>
@@ -62,6 +62,29 @@
   if (event.key === "Enter") {
   
     document.getElementById("submit").click();
+  }
+});
+const rememberCheckbox = document.querySelector('#remember');
+const usernameInput = document.querySelector('#email');
+const passwordInput = document.querySelector('#password');
+
+// Load saved credentials if "remember me" is checked
+if (localStorage.getItem('remember') === 'true') {
+  rememberCheckbox.checked = true;
+  usernameInput.value = localStorage.getItem('email');
+  passwordInput.value = localStorage.getItem('password');
+}
+
+// Save credentials if "remember me" is checked
+rememberCheckbox.addEventListener('change', () => {
+  if (rememberCheckbox.checked) {
+    localStorage.setItem('remember', 'true');
+    localStorage.setItem('email', usernameInput.value);
+    localStorage.setItem('password', passwordInput.value);
+  } else {
+    localStorage.removeItem('remember');
+    localStorage.removeItem('email');
+    localStorage.removeItem('password');
   }
 });
   </script>
