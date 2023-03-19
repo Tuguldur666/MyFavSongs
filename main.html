@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="img/1238155.png">
    
 </head>
-<body>
+<body onload="showAlert()">
     <nav class="navbar" >
     <h2 class="heading">MyFavSongs <span><i class="fa-solid fa-music"></i></span> </h2>
         <div class="social">
@@ -17,6 +17,8 @@
             <a href="https://www.instagram.com/trash_gang_community/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
             <a href="https://www.youtube.com/channel/UCkQ62tvPlVVb2WLppjRfPdQ?view_as=subscriber" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>   
         </div>
+       
+         
     <ul>
         <li><a href="main.html" style=" background:#fff;  color: #333;
             border-radius: 20px;">Home</a></li>
@@ -35,7 +37,7 @@
         <li><a href="about.html">About</a></li>
     </ul>
     </nav>
-   
+ 
     <section id=showcase>
       <div class="image" id="slide"></div>
       <div class="showcase-content">
@@ -83,6 +85,19 @@
     </footer>
 </body>
 <script>
+     function showAlert() {
+			const alertDiv = document.getElementById('alert');
+			const onloadTriggered = localStorage.getItem('onloadTriggered');
+			if (!onloadTriggered) {
+				alertDiv.style.display = 'block';
+				setTimeout(() => {
+					alertDiv.style.display = 'none';
+					localStorage.setItem('onloadTriggered', true);
+				}, 3000);
+			}
+		}
+
+
 	   function updateTime() {
   const now = new Date();
   const year = now.getFullYear();

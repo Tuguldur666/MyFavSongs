@@ -8,44 +8,59 @@
     <title>Join Us</title>
 </head>
 <body>
-    <div id="container">
-        <div class="form-wrap2">
-          <h1>  <i class="fas fa-user-secret"></i> Sign Up</h1>
-          <form>
-            <div class="form-group">
-              <label for="first-name">First Name</label>
-              <input type="text" name="firstName" id="first-name" />
-            </div>
-            <div class="form-group">
-              <label for="last-name">Last Name</label>
-              <input type="text"  name="lastName" id="last-name" >
-            </div>
-            <div class="form-group">
-              <label for="email">Your E-mail</label>
-              <i class="fas fa-envelope"></i>
-              <input type="email" name="email" id="email" placeholder=" ***@yahoo.com"/>
-            </div>
-            <div class="form-group">
-              <label for="password">New password</label>
-              <input type="password" name="password" id="password" placeholder="8-16 digit" />
-            </div>
-            <div class="form-group">
-              <label for="password">Confirm password</label>
-              <input type="password" name="pasword" id="password" placeholder="********" />
-            </div>
-            <button type="submit" class="btn">Create account</button>
-            <p class="bottom-text">
-                <input type="checkbox"> Read and agree to
-              <a href="#"> Terms & Conditions</a>
-              <p >Already have an account ? <a href="index.html">Sign in</a></p>
-            </p>
-          </form>
+  <div id="container">
+    <div class="form-wrap2">
+      <h1><i class="fas fa-user-secret"></i> Sign Up</h1>
+      <form>
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" name="firstName" id="first-name" />
         </div>
-        <footer>
-         
-        </footer>
-      </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" name="lastName" id="last-name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Your E-mail</label>
+          <i class="fas fa-envelope"></i>
+          <input type="email" name="email" id="email" placeholder="***@yahoo.com" />
+        </div>
+        <div class="form-group">
+          <label for="password">New password</label>
+          <input type="password" name="password" id="password" placeholder="8-16 digit" />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm password</label>
+          <input type="password" name="confirmPassword" id="confirm-password" placeholder="********" />
+        </div>
+        <button type="submit" class="btn" onclick="sign(event)">Create account</button>
+        <p class="bottom-text">
+          <input type="checkbox" id="terms" />
+          Read and agree to <a href="#">Terms &amp; Conditions</a>
+        </p>
+      </form>
+    </div>
+    <footer></footer>
+  </div>
+  <script>
+    function sign(event) {
+      event.preventDefault(); // prevent the form from submitting
+      const firstName = document.getElementById("first-name").value;
+      const lastName = document.getElementById("last-name").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirm-password").value;
+      const terms = document.getElementById("terms").checked;
+
+      if (firstName !== "" && lastName !== "" && email !== "" && password !== "" && confirmPassword !== "" && terms === true) {
+        // Redirect to the success page
+        location.href = "main.html";
+      } else {
+        // Show an error message
+        alert("Please fill in all the required fields and agree to the terms.");
+      }
+    }
+  </script>
 </body>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="DjMEP7LY"></script>
-<script src="./js/login.js"></script>
+
 </html>

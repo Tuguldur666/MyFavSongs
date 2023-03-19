@@ -135,5 +135,24 @@
    color: rgb(219, 217, 217);
    transition: 0.5s ease;
   }
-
+  input:focus {
+    /* previous styles here */
+    border-color: #2196f3;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+    animation: shake 0.2s linear;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  button:hover {
+    color: #333;
+    background: linear-gradient(to bottom,rgb(219, 217, 217) , rgb(160, 154, 154));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
 
